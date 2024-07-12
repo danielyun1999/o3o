@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.header {
+    text-align: center;
+    margin: 20px;
+}
+
+.header h1 {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.box {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+}
+
+.sidebar {
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin: 10px;
+}
+
+a {
+    color: blue;
+}
+
+.email {
+    text-align: center;
+    margin: 20px;
+}
+
+/* Media query for screens less than 575px */
+@media only screen and (max-width: 575px) {
+    .container {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .box, .sidebar {
+        width: 90%;
+        margin: 10px auto;
+        float: none;
+    }
+
+    .email {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
