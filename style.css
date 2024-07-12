@@ -19,6 +19,7 @@ body {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     display: flex;
+    flex-direction: row;
 }
 
 .sidebar {
@@ -70,15 +71,16 @@ body {
 .work-experience, 
 .education-experience {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* 모바일에서 세로 정렬을 보장하기 위해 수정 */
 }
 
 .work-item, 
 .education-item {
-    width: 48%;
+    width: 100%; /* 모바일에서 내용이 잘리지 않도록 100% 너비로 수정 */
     background-color: #f0f0f0;
     padding: 10px;
     box-sizing: border-box;
+    margin-bottom: 10px; /* 추가하여 모바일에서 보기 좋게 함 */
 }
 
 .footer {
@@ -89,4 +91,31 @@ body {
     bottom: 0;
     width: 100%;
     text-align: center;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 575px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sidebar, .content {
+        width: 100%; /* 모바일에서 100% 너비로 수정 */
+        margin: 10px 0;
+    }
+    
+    .sidebar {
+        height: auto;
+    }
+    
+    .work-experience, 
+    .education-experience {
+        flex-direction: column; /* 모바일에서 세로 정렬을 보장하기 위해 수정 */
+    }
+    
+    .work-item, 
+    .education-item {
+        width: 100%; /* 모바일에서 내용이 잘리지 않도록 100% 너비로 수정 */
+    }
 }
