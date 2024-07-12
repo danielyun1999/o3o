@@ -1,121 +1,38 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #e0e0e0;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-.header {
-    background-color: #333;
-    color: white;
-    padding: 10px; 
-}
-
-.container {
-    width: 90%; 
-    margin: 15px auto; 
-    background-color: #d0d0d0;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-}
-
-.sidebar {
-    width: 25%; 
-    background-color: #b0b0b0; 
-    padding: 15px; 
-    box-sizing: border-box;
-    text-align: left;
-}
-
-.sidebar h3 {
-    margin-top: 0;
-}
-
-.sidebar a {
-    display: block;
-    color: #000;
-    text-decoration: underline;
-    margin-bottom: 8px; 
-}
-
-.sidebar a:visited {
-    color: purple;
-    text-decoration: underline;
-}
-
-.content {
-    width: 70%; 
-    padding: 15px; 
-    box-sizing: border-box;
-    background-color: white;
-    text-align: left;
-}
-
-.content h2 {
-    border-bottom: 1px solid #333; 
-    padding-bottom: 5px;
-}
-
-.content ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.content ul li {
-    margin-bottom: 8px; 
-}
-
-.work-experience, 
-.education-experience {
-    display: flex;
-    flex-direction: column; /* 모바일에서 세로 정렬을 보장하기 위해 수정 */
-}
-
-.work-item, 
-.education-item {
-    width: 100%; /* 모바일에서 내용이 잘리지 않도록 100% 너비로 수정 */
-    background-color: #f0f0f0;
-    padding: 10px;
-    box-sizing: border-box;
-    margin-bottom: 10px; /* 추가하여 모바일에서 보기 좋게 함 */
-}
-
-.footer {
-    background-color: #555; /* Lighter color */
-    color: white;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-}
-
-/* Media Queries */
-@media only screen and (max-width: 575px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .sidebar, .content {
-        width: 100%; /* 모바일에서 100% 너비로 수정 */
-        margin: 10px 0;
-    }
-    
-    .sidebar {
-        height: auto;
-    }
-    
-    .work-experience, 
-    .education-experience {
-        flex-direction: column; /* 모바일에서 세로 정렬을 보장하기 위해 수정 */
-    }
-    
-    .work-item, 
-    .education-item {
-        width: 100%; /* 모바일에서 내용이 잘리지 않도록 100% 너비로 수정 */
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume of Mohammed Alazawi - Work Experience</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Resume of Mohammed Alazawi</h1>
+    </div>
+    <div class="container">
+        <div class="sidebar-wrapper">
+            <h2>Other pages</h2>
+            <ul>
+                <li><a href="work_experience.html">Work Experience</a></li>
+                <li><a href="educational_experience.html">Educational Experience</a></li>
+                <li><a href="related_awards_skills.html">Related Awards and Skills</a></li>
+            </ul>
+        </div>
+        <div class="content-wrapper">
+            <h2>Work Experience</h2>
+            <div class="content">
+                <p><strong>Pizza Shop</strong></p>
+                <p>Busser, Oct. 2009 - Dec. 2012</p>
+                <p><a href="http://pizzashop.com">Pizza shop site</a></p>
+                <p><strong>Random NYS Agency</strong></p>
+                <p>Web Design Intern, Jan. 2013 - present</p>
+                <p><a href="http://nysagency.com">NYS Agency site</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="email">
+        <p><a href="mailto:email@example.com">Email me!</a></p>
+    </div>
+</body>
+</html>
