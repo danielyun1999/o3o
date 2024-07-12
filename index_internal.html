@@ -8,33 +8,49 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
         }
         .header {
             text-align: center;
-            margin: 20px;
+            margin: 20px 0;
         }
         .header h1 {
             background-color: #333;
             color: #fff;
             padding: 10px;
+            border-radius: 8px;
         }
         .container {
             display: flex;
             justify-content: center;
             margin: 20px;
         }
-        .box {
+        .content-wrapper {
             background-color: #fff;
             padding: 20px;
             margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .sidebar {
+        .sidebar-wrapper {
             background-color: #e0e0e0;
             padding: 20px;
             margin: 10px;
+            border-radius: 8px;
+        }
+        .sidebar h2, .content h2 {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 8px;
         }
         a {
             color: blue;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
         .email {
             text-align: center;
@@ -46,12 +62,7 @@
                 margin: 0;
                 padding: 0;
             }
-            .box, .sidebar {
-                width: 90%;
-                margin: 10px auto;
-                float: none;
-            }
-            .email {
+            .content-wrapper, .sidebar-wrapper {
                 width: 90%;
                 margin: 10px auto;
             }
@@ -63,7 +74,7 @@
         <h1>Resume of Mohammed Alazawi</h1>
     </div>
     <div class="container">
-        <div class="sidebar">
+        <div class="sidebar-wrapper">
             <h2>Other pages</h2>
             <ul>
                 <li><a href="index_internal.html">Work Experience</a></li>
@@ -71,13 +82,15 @@
                 <li><a href="related_awards_skills.html">Related Awards and Skills</a></li>
             </ul>
         </div>
-        <div class="box">
+        <div class="content-wrapper">
             <h2>Educational Experience</h2>
-            <p><strong>High School Diploma</strong></p>
-            <p>Graduated 2012</p>
-            <h2>BS in Computer Science</h2>
-            <p>University Name</p>
-            <p>Expected 2016</p>
+            <div class="content">
+                <p><strong>High School Diploma</strong></p>
+                <p>Graduated 2012</p>
+                <p><strong>BS in Computer Science</strong></p>
+                <p>University Name</p>
+                <p>Expected 2016</p>
+            </div>
         </div>
     </div>
     <div class="email">
